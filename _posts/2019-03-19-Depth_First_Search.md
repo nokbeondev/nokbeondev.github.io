@@ -13,7 +13,7 @@ title: "Depth First Search (깊이 우선 탐색, DFS)"
 - ###### 어떤 노드를 방문했는지 여부를 반드시 검사
 - ###### 탐색 과정 예시
 
-![탐색과정예시](C:\nokbeondev.github.io\img\dfs-example.jpg)
+![탐색과정예시](http://nokbeondev.github.io/img/dfs-example.jpg)
 
 
 ### 2. 구현 - 순환 호출 이용

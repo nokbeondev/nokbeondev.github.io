@@ -16,7 +16,7 @@ title: "Breadth First Search (너비 우선 탐색, BFS)"
  - ###### 노드 방문 여부를 반드시 검사
  - ###### 선입선출(FIFO) 원칙으로 탐색해야하므로 Queue를 사용
  - ###### 탐색 과정 예시
-![가나다](C:\nokbeondev.github.io\img\bfs-example.png)
+![탐색과정예시](C:\nokbeondev.github.io\img\bfs-example.jpg)
 
 ### 2. 구현
 ```java

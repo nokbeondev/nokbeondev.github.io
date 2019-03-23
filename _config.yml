@@ -11,7 +11,7 @@ github_username: # your Github username
 disqus_username: # your disqus username
 
 google-analytics: # add it if you have one
-google_font: "Nanum+Gothic:400,700"
+google_font: "Gothic:400,700"
 
 skillstree: true # turn on or off the skills tree in about page
 

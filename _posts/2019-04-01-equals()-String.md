@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Java] String 비교시 주의점 - equals()와 == 연산자"
+title: "[Java] String 비교시 주의점 equals()와 == 연산자"
 ---
 
-### 1. equals()와 ==의 차이점
+### 1. equals()와 ==의 차이점 (String에 한 함)
 
 - ###### 기본적으로 이 둘 모두 좌우의 값을 비교하고 boolean으로 반환한다.
 - ###### 차이점
@@ -26,3 +26,5 @@ title: "[Java] String 비교시 주의점 - equals()와 == 연산자"
         System.out.println(b==c); // false
     ```
     
+### 주의
+- Object 클래스에 있는 `equals()`는 주소값을 비교한다. (즉, `==` 연산자와 같다.)

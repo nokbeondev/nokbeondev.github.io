@@ -56,3 +56,13 @@ public class ClassName{
     }
 }
 ```
+
+- static 변수는 객체를 생성여부에 관계없이 사용할 수 있다.
+- 인스턴스 변수는 객체 생성 없이 사용할 수 없다.
+
+```java
+public class Calculator {
+	String color; // 인스턴스 변수 -> Calculator.color로 사용 불가능
+    String double pi = 3.141592; // static 변수 -> Calculator.pi로 사용 가능
+}
+```

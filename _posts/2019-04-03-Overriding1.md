@@ -79,13 +79,7 @@ public class ShapeTest {
 		c1 = new Circle(2);
 		arr[2] = c1;
 		c1.calcArea();
-		c1.printInfo();
-		
-		for(int i = 0; i < arr.length; i++) {
-			arr[i].calcArea(); // 각 인덱스에 대입된 객체에 따라서 각각 오버라이딩 된 메소드가 호출이 될 것이다.
-			arr[i].printInfo();
-		}
-		
+		c1.printInfo();	
 	}
 }
 ```
@@ -120,9 +114,6 @@ public class ShapeTest {
 ```
 - 결과는 아래와 같이 나온다.
 
-		가로 : 3, 세로 : 4, 사각형 면적 : 12.0
-		가로 : 5, 세로 : 5, 사각형 면적 : 25.0
-		반지름 : 2, 원의 면적 : 12.566370614359172
 		가로 : 3, 세로 : 4, 사각형 면적 : 12.0
 		가로 : 5, 세로 : 5, 사각형 면적 : 25.0
 		반지름 : 2, 원의 면적 : 12.566370614359172

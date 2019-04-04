@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+﻿# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -6,24 +6,20 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: HyG
-brief-intro: Front-end Dev Engineer
+title: Nokbeondev
+brief-intro: Software Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gaohaoyang.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: gaohaoyang126
-facebook_username: gaohaoyang.water
-github_username:  Gaohaoyang
-email: gaohaoyang126@126.com
-weibo_username: 3115521wh
-zhihu_username: gaohaoyang
-linkedIn_username: gaohaoyang
-dribbble_username:
+github_username:  nokboendev
+email: 4789nd@gmail.com
+linkedIn_username: 4789nd
 
-description_footer: 本站记录我前端之旅的沿途风景！
+
+description_footer: 가치를 만드는 엔지니어
 
 # comments
 # two ways to comment, only choose one, and use your own short name

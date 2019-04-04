@@ -1,39 +1,28 @@
 ---
-layout: null
+layout: default
 ---
 
-<html>
-  <head>
-      
-  {% include head.html %}
+<div class="page clearfix" post>
+    <div class="left">
+        <h1>{{page.title}}</h1>
+        <hr>
+        {{content}}
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
 
-  {% if site.google-analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
-
-  {% if page.url == "/404.html" %}
-  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
-  {% endif %}
-
-  </head>
-  
-  {% include header.html %}
-
-<header class="post-header">
-	<center><div class="contact-title">{{ page.title }}</div>
-		<div class="contact-subtitle"><p>{{ page.subtitle }}</p></div></center>
-</header>
-
-<div class="wrapper">
-	<div class="post-content">
-		{{ content }}
-	</div>
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
 </div>
-
-<footer>
-
-{% include foot.html %}
-{% include footer.html %}
-
-</footer>
-</html>
+<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>

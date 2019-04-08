@@ -9,8 +9,12 @@ title: "Java Collection Framework 구성도"
 
 ### 2. 구성도
 
-![자바콜렉션프레임위크그림](http://nokbeondev.github.io/img/java-util-collection.gif)
+![자바콜렉션프레임워크그림](http://nokbeondev.github.io/img/java-util-collection.gif)
 
-### 3. 출처
+### 3. 중요
+
+![자바콜렉션프레임워크그림중요한것모음](http://nokbeondev.github.io/img/JavaCollectionFramework.png)
+
+### 4. 출처
 Java Collection Framework - 생활코딩
 [https://opentutorials.org/course/1223/6446](https://opentutorials.org/course/1223/6446)

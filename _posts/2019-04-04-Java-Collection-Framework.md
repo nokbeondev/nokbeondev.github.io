@@ -15,6 +15,11 @@ title: "Java Collection Framework 구성도"
 
 ![자바콜렉션프레임워크그림중요한것모음](http://nokbeondev.github.io/img/JavaCollectionFramework.png)
 
+- List와 Set 계열의 차이점
+	- 리스트는 중복 저장 허용, 순차 저장 허용
+	- Set은 중복 저장 불가능, 순차 누적 불가능
+
+
 ### 4. 출처
 Java Collection Framework - 생활코딩
 [https://opentutorials.org/course/1223/6446](https://opentutorials.org/course/1223/6446)

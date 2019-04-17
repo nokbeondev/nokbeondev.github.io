@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "정렬별 시간 복잡도"
+title: "[Java] 정렬별 시간 복잡도"
 comments: true
 categories: Java
 ---

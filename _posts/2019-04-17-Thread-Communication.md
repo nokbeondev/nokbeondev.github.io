@@ -136,12 +136,12 @@ import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class TCPClient {
-	public final static String TEACHER = "183.101.196.162"; // 강사님
-	public final static String LEE = "192.168.15.17"; // 이원영
-	public final static String HYUN = "192.168.16.12"; // 현상일
-	public final static String NAM = "192.168.16.59"; // 남정현
-	public final static String JUNG = "192.168.16.47"; // 정원준
-	public final static String SO = "192.168.16.23"; // 소은영
+	public final static String TEACHER = "183.101.196.162"; // 선생님
+	public final static String LEE = "192.168.15.17"; // 이**
+	public final static String HYUN = "192.168.16.12"; // 현**
+	public final static String NAM = "192.168.16.59"; // 남**
+	public final static String JUNG = "192.168.16.47"; // 정**
+	public final static String SO = "192.168.16.23"; // 소**
 	public final static String TEST = "127.0.0.1"; // Test용, 127.0.0.1라는 ip는 인터넷 없이도 혼자 Test할 수 있는 ip
 
 	Socket s;

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Oracle] 기초 문법 2"
+title: "[Oracle] 기초 문법 - 단일행 함수2"
 ---
 
 ### 1. 예제로 알아보는 오라클 기초 2

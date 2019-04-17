@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Java] LinkedList - 생활코딩"
+title: "LinkedList - 생활코딩"
 comments: true
 categories: Java_DataStructures
 ---

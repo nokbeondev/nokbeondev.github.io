@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] Thread를 이용한 통신"
+comments: true
+categories: Java
 ---
 
 ### 1. 서버와 클라이언트의 통신 프로세스

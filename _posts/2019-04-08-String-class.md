@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] String 클래스 선언 시 처리 순서"
+comments: true
+categories: Java
 ---
 
 ### 1. 소스 코드 예시를 통한 이해

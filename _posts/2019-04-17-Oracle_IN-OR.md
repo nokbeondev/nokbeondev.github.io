@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Oracle] IN()과 OR의 사용 비교"
+comments: true
+categories: Oracle
 ---
 
 ### 1. IN()을 사용한 경우

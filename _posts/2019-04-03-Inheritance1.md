@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 상속과 상하위 클래스 호출
+comments: true
+categories: Java
 ---
 
 ### 1. 상속 시 메모리 할당

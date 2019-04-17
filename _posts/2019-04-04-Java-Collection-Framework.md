@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Java Collection Framework 구성도"
+comments: true
+categories: Java_DataStructures
 ---
 
 ### 1. 개념

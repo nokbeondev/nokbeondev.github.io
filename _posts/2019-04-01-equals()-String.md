@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] String 비교시 주의점 equals()와 == 연산자"
+comments: true
+categories: Java
 ---
 
 ### 1. equals()와 ==의 차이점 (String에 한 함)

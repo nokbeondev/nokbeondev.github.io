@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Oracle] 기초 문법 실습 예제"
+comments: true
+categories: Oracle
 ---
 
 ### 1. 기초 예제

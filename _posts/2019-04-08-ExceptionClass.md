@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 예외와 예외 클래스"
+comments: true
+categories: Java
 ---
 
 ### 1. 개념

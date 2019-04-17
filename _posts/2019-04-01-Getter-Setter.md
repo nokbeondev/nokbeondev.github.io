@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] Getter()와 Setter()"
+comments: true
+categories: Java
 ---
 
 ### 1. 개념

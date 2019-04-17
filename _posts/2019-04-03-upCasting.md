@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] Up-Casting과 Down-Casting 그리고 instanceof 연산자"
+comments: true
+categories: Java
 ---
 
 ### 1. Up-Casting의 개념과 가능한 경우

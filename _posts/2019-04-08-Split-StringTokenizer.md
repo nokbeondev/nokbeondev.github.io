@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] String 클래스의 split()과 StringTokenizer 클래스"
+comments: true
+categories: Java
 ---
 
 ### 1. 소스 예제로 보는 차이점

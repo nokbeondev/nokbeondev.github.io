@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] Interface 개념"
+comments: true
+categories: Java
 ---
 
 ### 1. 인터페이스 개념

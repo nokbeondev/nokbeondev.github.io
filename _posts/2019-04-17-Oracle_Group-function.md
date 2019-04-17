@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Oracle] 기초 문법 - 그룹행 함수"
+comments: true
+categories: Oracle
 ---
 
 ### 1. 예제로 알아보는 기초 문법

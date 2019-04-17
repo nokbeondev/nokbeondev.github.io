@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Oracle] JOIN문"
+comments: true
+categories: Oracle
 ---
 
 ### 1. JOIN문 종류

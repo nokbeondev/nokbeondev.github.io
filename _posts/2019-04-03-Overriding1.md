@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 오버라이딩"
+comments: true
+categories: Java
 ---
 
 ### 1. 오버라이딩 조건

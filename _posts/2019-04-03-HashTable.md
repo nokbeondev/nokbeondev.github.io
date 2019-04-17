@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "해쉬 테이블(Hash Table)"
+comments: true
+categories: Java_DataStructures
 ---
 
 ### 1. 개념

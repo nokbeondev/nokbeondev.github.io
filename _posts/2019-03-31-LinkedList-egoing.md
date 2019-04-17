@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] LinkedList - 생활코딩"
+comments: true
+categories: Java_DataStructures
 ---
 
 ### 생활코딩 강의에서 소개한 LinkedList - Java

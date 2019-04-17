@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] Static 변수와 인스턴스 변수 주의점"
+comments: true
+categories: Java
 ---
 
 ### 1. 호출에서 다른점 비교

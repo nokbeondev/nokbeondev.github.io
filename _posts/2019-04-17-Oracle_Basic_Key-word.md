@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Oracle] 기본 용어"
+comments: true
+categories: Oracle
 ---
 
 ### 1. Database가 관리되는 원리

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 생성자"
+comments: true
+categories: Java
 ---
 
 ### 1. 개념

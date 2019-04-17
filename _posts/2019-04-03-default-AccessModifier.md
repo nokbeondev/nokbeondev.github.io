@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 접근 제한자"
+comments: true
+categories: Java
 ---
 
 ### 1. 접근 제한자의 종류

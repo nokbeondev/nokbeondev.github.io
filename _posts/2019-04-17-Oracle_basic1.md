@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Oracle] 기초 문법 - 단일행 함수1"
+comments: true
+categories: Oracle
 ---
 
 ### 1. 예제로 알아보는 오라클 기초 1

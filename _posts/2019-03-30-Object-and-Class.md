@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 객체와 클래스"
+comments: true
+categories: Java
 ---
 
 ### 1. 개념

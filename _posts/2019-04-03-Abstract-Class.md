@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 추상 클래스와 추상 메소드"
+comments: true
+categories: Java
 ---
 
 ### 1. 추상 클래스 용도

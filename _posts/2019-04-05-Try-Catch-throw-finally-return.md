@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 예외 처리"
+comments: true
+categories: Java
 ---
 
 ### 1. 처리 과정

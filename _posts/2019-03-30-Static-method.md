@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 정적 멤버와 static"
+comments: true
+categories: Java
 ---
 
 ### 1. 저장되는 장소

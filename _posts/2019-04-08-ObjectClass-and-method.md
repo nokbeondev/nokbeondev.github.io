@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] Object 클래스와 메소드"
+comments: true
+categories: Java
 ---
 
 ### 1. 자바의 최상위 부모 클래스

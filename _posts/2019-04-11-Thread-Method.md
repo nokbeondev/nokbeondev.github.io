@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] Thread의 주요 메소드"
+comments: true
+categories: Java
 ---
 
 ### 1. synchronized()

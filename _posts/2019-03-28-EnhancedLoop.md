@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 향상된 for문"
+comments: true
+categories: Java
 ---
 
 ### 1. 목적 및 특징

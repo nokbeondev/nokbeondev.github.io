@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] throws와 예외 처리 이야기"
+comments: true
+categories: Java
 ---
 
 ### 1. throws의 역할과 생겨난 계기

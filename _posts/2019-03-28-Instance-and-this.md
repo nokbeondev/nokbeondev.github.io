@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 인스턴스 멤버와 this"
+comments: true
+categories: Java
 ---
 
 ### 1. 소스 코드 예시

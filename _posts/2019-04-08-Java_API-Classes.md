@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Java] 기본 API 클래스 중 중요한 것들"
+comments: true
+categories: Java
 ---
 
 ### 1. trim()

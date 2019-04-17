@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "제목제목제목제목"
+title: "[Java] Thread를 이용한 통신"
 ---
 
-### 1. 개념
-
-임의의 노드에서 시작해서 다음 분기로 넘어가기 전에 해당 분기를 완벽하게 탐색하는 방법
+### 1. 서버와 클라이언트의 통신 프로세스
+![서버와클라이언트의통신프로세스](https://nokbeondev.github.io/img/ThreadCommunication.jpeg)

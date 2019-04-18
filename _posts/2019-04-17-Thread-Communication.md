@@ -5,10 +5,14 @@ comments: true
 categories: Java
 ---
 
-### 1. 서버와 클라이언트의 통신 프로세스
+### 1. TCP 통신 순서
+![TCP통신순서](https://nokbeondev.github.io/img/TCP_Communication_process.PNG)
+
+
+### 2. 서버와 클라이언트의 통신 프로세스
 ![서버와클라이언트의통신프로세스](https://nokbeondev.github.io/img/ThreadCommunication.JPG)
 
-### 2. 예제를 통한 설명
+### 3. 예제를 통한 설명
 
 - 서버
 

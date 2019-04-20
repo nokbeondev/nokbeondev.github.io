@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Baejoon] Breadth First Search 2 (백준 2178 미로찾기)"
+title: "[Baekjoon] 미로찾기 - 2178번 (BFS)"
 comments: true
 categories: Java_Algorithms
 ---

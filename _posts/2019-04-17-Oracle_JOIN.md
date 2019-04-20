@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Oracle] JOIN문"
+title: "[Oracle] JOIN문과 USING"
 comments: true
 categories: Oracle
 ---
@@ -17,21 +17,10 @@ categories: Oracle
 	- FULL JOIN
 
 
-### 2. 실습 예제를 통한 JOIN문의 종류와 사용법 설명
+### 2. INNER JOIN
+완전히 일치하는 데이터만 나오는 방식(일반적인 조인 방식)이다. INNER JOIN은 여러가지가 있는데 그 중 EQUI JOIN의 사용법(오라클용, 표준화용 두 가지 비교)은 아래와 같다.
+
 ```sql
-/*
-사원의 사번, 이름, 부서ID를 출력하시오.
-*/
-SELECT employee_id, first_name, department_id
-FROM employees;
-
-/*
-JOIN문은 오라클용 문법으로 사용해도 되고 표준화된 JOIN(ANSI JOIN)을 사용해도 된다.
-가급적이면 ANSI JOIN을 사용
-
-INNER JOIN은 여러가지가 있는데 그 중 EQUI JOIN의 사용법
-*/
-
 SELECT employee_id, first_name, 
        employees.department_id, department_name
 FROM employees, departments
@@ -55,7 +44,6 @@ ON e.department_id = d.department_id;
 SELECT employee_id, first_name, e.department_id, department_name, e.job_id, job_title
 FROM employees e JOIN departments d ON e.department_id = d.department_id
                  JOIN jobs j ON e.job_id = j.job_id;
-
 /*
 부서ID, 부서이름
 부서가 속한 지역ID(location_id)
@@ -68,12 +56,13 @@ SELECT d.department_id, department_name
 FROM departments d 
      JOIN locations l ON d.location_id = l.location_id
      JOIN countries c ON l.country_id = c.country_id;
+```
 
-/*
-ANSI JOIN의 유형 중에 Natural JOIN이 있다.
-<Natural JOIN>
-두 개 이상의 테이블에서 데이터 자료형과 이름이 같은 컬럼을 기반으로 JOIN 할 수 있음
-*/
+
+### 3. NATURAL JOIN
+두 개 이상의 테이블에서 데이터 자료형과 이름이 같은 컬럼을 기반으로 JOIN 할 수 있다.
+
+```sql
 SELECT employee_id, e.department_id, department_name
 FROM employees e 
 JOIN departments d ON e.department_id = d.department_id;
@@ -87,17 +76,21 @@ employee 테이블과 department 테이블에 겹치는 것이 department_id와 
 SELECT employee_id, department_id, department_name
 FROM employees
 NATURAL JOIN departments; 
+```
 
-/*
-USING절
+### 3. USING절
 두 개 이상의 컬럼이 일치하는 경우 하나의 컬럼만 일치하도록 할 수 있다.
 USING절에 별칭을 사용하면 안된다. 에러난다.
-*/
+
+```sql
 SELECT employee_id, department_id, department_name
 FROM employees
 JOIN departments
 USING (department_id);
+```
+- JOIN에서 USING과 ON 사용하기
 
+```sql
 /*
 일반 조건과 JOIN조건
 사원의 급여가 5000보다 큰 사원을 대상으로
@@ -121,7 +114,11 @@ SELECT employee_id, first_name, salary, department_name
 FROM employees e, departments d
 WHERE e.department_id =  d.department_id
 AND salary > 5000;
+```
 
+- GROUP BY와 JOIN 함께 사용하기
+
+```sql
 /*
 그룹화 JOIN
 부서별 부서ID, 부서이름, 사원수를 출력하시오.
@@ -131,7 +128,14 @@ SELECT department_id, department_name, COUNT(*)
 FROM employees
 JOIN departments USING (department_id)
 GROUP BY department_id, department_name;
+```
 
+### 4. SELF JOIN
+자기 자신과 JOIN을 하는 것이다.
+
+- 예제 코드
+
+```sql
 /*
 Self-JOIN
 관리자보다 많은 급여를 받는 사원의 정보를 출력하시오.
@@ -148,8 +152,20 @@ FROM employees e
 JOIN employees m
 ON e.manager_id = m.manager_id
 WHERE e.salary > m.salary;
+```
 
+### 5. OUTER JOIN
+기준이 되는 집합과 JOIN하는 집합의 연결이 성립되지 않더라도 그 결과를 추출한다.
 
+- LEFT OUTER JOIN (OUTER는 생략 가능, default)
+왼쪽 테이블이 기준이다.(FROM절에 있는 테이블이 왼쪽이다.)
+
+- RIGHT OUTER JOIN
+오른쪽 테이블이 기준이다.
+
+- 예제 코드
+
+```sql
 /*
 OUTER JOIN
  - LEFT OUTER JOIN (OUTER는 생략해서 사용 가능)
@@ -168,7 +184,7 @@ INNER JOIN departments d
 ON e.department_id = d.department_id; -- 106건
 
 /*
-이번에는 부서 기준으로 출력
+이번에는 부서 기준으로 출력 - RIGHT OUTER JOIN
 */
 SELECT employee_id, department_name
 FROM employees
@@ -183,5 +199,4 @@ SELECT employee_id, department_name
 FROM employees
 FULL JOIN departments
 USING (department_id); -- 123건
-
 ```

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Oracle] IN()과 OR의 사용 비교"
+title: "[Oracle] IN()과 OR의 사용 비교 주의점"
 comments: true
 categories: Oracle
 ---

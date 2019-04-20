@@ -1,18 +1,21 @@
 ---
 layout: post
-title: "[Oracle] 기초 문법 - 그룹행 함수"
+title: "[Oracle] 그룹 함수와 GROUP BY"
 comments: true
 categories: Oracle
 ---
 
-### 1. 예제로 알아보는 기초 문법
-- 처리순서를 알고 있으면 SQL문을 이해하는데 큰 도움이 된다.
-	- 처리 순서 : FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
-	- 처리 순서로 별칭(alias)를 사용할 수 있는 위치를 알 수 있다.(SELECT절에서 별칭이 선언되므로 ORDER BY절에서 별칭 사용 가능)
+	SELECT 처리 순서
+	FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
+
+
+### 1. 그룹함수 
+- 종류 : SUM(), AVG(), COUNT(), MAX(), MIN()
+- 주의 : COUNT()에 별표기호로 카운트를 하면 `NULL`까지 모두 카운트한다.
+
+### 2. GROUP BY
 
 ```sql
--- 그룹함수 : SUM(), AVG(), COUNT()
--- 주의 : COUNT()에 *로 카운트를 하면 NULL까지 모두 카운트한다.
 SELECT SUM(salary) 총급여합,
        SUM(salary) 총수당, -- NULL값 무시
        AVG(salary) 총급여평균, -- NULL값 무시
@@ -22,15 +25,9 @@ SELECT SUM(salary) 총급여합,
        COUNT(department_id) "사원이 속한 부서 수" -- NULL 값 제외하고 카운트
 FROM employees;
 
--- 그룹함수 : MAX(), MIN()
 SELECT MAX(salary) "최대 급여", MAX(hire_date) "최근 입사 일자",
        MIN(salary) "최소 급여", MIN(hire_date) "최장기 입사 일자"
 FROM employees;
-
-/*
-SELECT 처리 순서
-FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
-*/
 
 /*
 부서별 사원 수를 출력하시오.
@@ -60,18 +57,28 @@ GROUP BY절에서 사용한 컬럼과 그룹함수만 SELECT절에서 사용할 
 SELECT job_id, COUNT(*)
 FROM employees
 GROUP BY department_id;
+```
 
-/*
-그룹 함수(SUM, COUNT, AVG, MIN, MAX...)는 GROUP BY 이후에 처리
-*/
+### 2. GROUP BY
+전체가 아닌 특정 그룹으로 묶어 데이터를 집계할 수도 있다. 이때 사용되는 구문이 바로 `GROUP BY` 절이다. 그룹으로 묶을 컬럼명이나 표현식을 `GROUP BY` 절에 명시해서 사용하며 `GROUP BY` 구문은 `WHERE`와 `ORDER BY`절 사이에 위치한다. 그룹 함수(SUM, COUNT, AVG, MIN, MAX...)는 `GROUP BY` 이후에 처리한다.
 
+- 예제 코드
+
+```sql
 /*
 각 부서별 사원 수가 5명 이상인 부서의 부서ID, 사원 수를 출력하시오.
 */
 SELECT department_id, COUNT(*)
 FROM employees
 WHERE COUNT(*) >= 5;
+```
 
+### 3. HAVING
+`HAVING`절은 `GROUP BY`절 다음에 위치해 `GROUP BY`한 결과를 대상으로 다시 필터를 거는 역할을 수행한다. 즉 `HAVING` 필터 조건 형태로 사용한다. 
+
+- 예제 코드
+
+```sql
 /*
 그룹에 대한 조건 : HAVING
 */
@@ -93,6 +100,4 @@ WHERE job_id LIKE '%REP%'
 GROUP BY job_id
 HAVING SUM(salary) > 7000 -- 처리 순서에 의해 HAVING 절에서는 별칭 못 쓴다.
 ORDER BY 총급여 DESC; -- SELECT 다음에 처리되므로 별칭 사용 가능하다.
-
-
 ```

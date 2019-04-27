@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "[Oracle] DML"
+title: "[Oracle] Data Manipulatino Language (DML)"
 comments: true
 categories: Oracle
 ---
 
 ### 1. 종류
-- CREATE
-- INSERT
-- UPDATE
-- DELETE
+- SELECT
+	- 데이터베이스에 들어 있는 데이터를 조회하거나 검색하기 위한 명령어를 말하는 것이다.
+- INSERT, UPDATE, DELETE
+	- 데이터베이스의 테이블에 들어 있는 데이터에 변형을 가하는 종류의 명령어들을 말한다. 데이터 삽입, 수정, 삭제
 
 ### 2. 예제를 통해 CREATE 이해하기
 

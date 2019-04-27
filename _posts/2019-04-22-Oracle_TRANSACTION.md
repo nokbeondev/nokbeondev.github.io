@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Oracle] 트랜젝션과 Database"
+title: "[Oracle] 트랜젝션 개념과 Database 관계"
 comments: true
 categories: Oracle
 ---

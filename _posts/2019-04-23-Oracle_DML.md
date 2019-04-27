@@ -11,55 +11,8 @@ categories: Oracle
 - INSERT, UPDATE, DELETE
 	- 데이터베이스의 테이블에 들어 있는 데이터에 변형을 가하는 종류의 명령어들을 말한다. 데이터 삽입, 수정, 삭제
 
-### 2. 예제를 통해 CREATE 이해하기
 
-- 선언하기
-
-```sql
-CREATE TABLE copy_t1
-AS SELECT * FROM t1;
-```
-
-- 테이블/컬럼 복사하기1
-	- 새로 만들 테이블 명 : copy_t4
-	- 복사할 컬럼 : t4 테이블의 copy_t4
-    
-```sql
-DESC copy_t1; -- copy_t1 테이블의 내용 확인
-SELECT * FROM t1;
-SELECT * FROM copy_t1;
-
--- 아래 부분 부터 복사관련 코드
-CREATE TABLE copy_t4
-AS SELECT t4b FROM t4;
-SELECT * FROM t4;
-```
-
-- 테이블/컬럼 복사하기2
-
-```sql
--- copy_t41에는 t4a컬럼만 복사되어 저장된다. 그리고 컬럼 별칭을 a로 설정
-CREATE TABLE copy_t41
-AS SELECT t4a a FROM t4; 
-```
-
-
-- 테이블 구조 복사하기 예제
-
-```sql
-/*
-테이블 t4의 총 행 수는 2건이다.
-이 테이블의 구조만 복사하여 copy_t42테이블에 붙여넣기 하시오.
-(copy_t42 테이블의 행 수는 0)
-*/
-
-CREATE TABLE copy_t42
-AS SELECT * FROM t4 WHERE 1 > 2; -- 일부러 비교 대상의 결과가 false인 경우를 WHERE절에 넣어서 구조만 가져오게 한다.
-SELECT * FROM copy_t42;
-```
-
-
-### 3. 예제를 통해 INSERT 이해하기
+### 2. 예제를 통해 INSERT 이해하기
 
 테이블들의 제약 조건과 컬럼의 성격에 맞게 삽입해야한다. 
 
@@ -101,7 +54,7 @@ SELECT t4b FROM t4;
 ```
 
 
-### 4. 예제를 통해 UPDATE 이해하기
+### 3. 예제를 통해 UPDATE 이해하기
 
 - 특정 데이터 수정하기
 
@@ -146,7 +99,7 @@ SELECT * FROM customer;
 -- 즉, 수정 안된다.
 ```
 
-### 5. 예제를 통해 DELETE 이해하기
+### 4. 예제를 통해 DELETE 이해하기
 - `FROM`절을 생략할 수 있다.
 - `DELETE FROM`와 `TRUNCATE`는 다르다. `DELETE FROM`의 경우에는 실제 DB를 수정하는 것이 아닌, 스냅샷을 수정하는 것이고 `TRUNCATE`의 경우 DDL의 하나로써 트랜젝션이 자동으로 완료되므로 DB를 직접 수정하게 된다.
 
@@ -156,7 +109,7 @@ WHERE id = 'i1';
 SELECT * FROM customer;
 ```
 
-### 6. 테이블을 만들고 예제를 통해 실습하기
+### 5. 테이블을 만들고 예제를 통해 실습하기
 
 - 상품 테이블 만들기 (product)
 

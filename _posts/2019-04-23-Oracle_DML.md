@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Oracle] Data Manipulatino Language (DML)"
+title: "[Oracle] Data Manipulation Language (DML)"
 comments: true
 categories: Oracle
 ---

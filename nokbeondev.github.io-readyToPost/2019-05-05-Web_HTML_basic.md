@@ -107,7 +107,8 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
     </form>
   </div>
 ```
-
+위의 코드는 아래와 같이 웹 브라우저에서 표현된다.
+![input설명그림](https://nokbeondev.github.io/img/Web_html_input.JPG)
 
 - `<select>`, `<option>`
 - `<textarea>`

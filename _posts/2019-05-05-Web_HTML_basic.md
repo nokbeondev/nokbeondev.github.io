@@ -90,7 +90,24 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
 - `<input>` (HTML5에 추가된 `input` 타입의 속성값들)
 
 ```xml
-<div>
+    <!-- input type="text"와 같음 -->
+    <!-- input의 기본 값을 "html"로 설정-->
+    <input style="width:50px" 
+           value="html"
+           maxlength="10"> 
+    <br>
+    <input style="width:200px" type="password"><br>
+    <input type="checkbox" name="c">ONE&nbsp;&nbsp;
+    <input type="checkbox" name="c">TWO&nbsp;&nbsp;
+    <input type="checkbox" name="c">THREE<br>
+    
+    <input type="radio" name="r">남&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="r">여<br>
+
+  </form>
+  </div>
+  
+  <div>
     <h3>HTML5에 추가된 input type속성값들</h3>
     <form>
       <input type="number" value="5" max="10" min="1" step="2"><br>
@@ -98,17 +115,22 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
       <input type="email"><br>
     </form>
   </div>
+  
   <div>
     <h3>HTML5에 추가된 input태그의 속성들</h3>
     <form>
       <input placeholder="입력하세요"><br>
       <input> <input autocomplete="off"><br>
-      <input autofocus placeholder="자동포커스받기">
+      <input autofocus placeholder="자동포커스받기">      
     </form>
   </div>
+</body>
+</html>
 ```
-위의 코드는 아래와 같이 웹 브라우저에서 표현된다. 아래 그림처럼 위, 아래 화살표 클릭으로 2씩 증가/감소 할 수 있는 기능, 날짜 정하는 기능, 이메일 형식만 입력받을 수 있는 기능, 입력하는 박스에 '입력하세요'라는 문구를 넣을 수 있는 기능, 자동 포커스 받을 수 있는 기능 등이 있다.
-![input설명그림](https://nokbeondev.github.io/img/Web_html_input.JPG)
+위의 코드는 아래와 같이 웹 브라우저에서 표현된다. 아래 그림처럼 위, 아래 화살표 클릭으로 2씩 증가/감소 할 수 있는 기능, 날짜 정하는 기능, 이메일 형식만 입력받을 수 있는 기능, 입력하는 박스에 '입력하세요'라는 문구를 넣을 수 있는 기능, 자동 포커스 받을 수 있는 기능, radio 선택 기능, 체크박스 기능 등이 있다.
+
+![input설명그림1](https://nokbeondev.github.io/img/Web_html_input2.JPG)
+![input설명그림2](https://nokbeondev.github.io/img/Web_html_input.JPG)
 
 - `<select>`, `<option>`
 여러 옵션 중에 선택한 것을 입력받는 기능이다.
@@ -192,6 +214,9 @@ HTML is easy to learn - You will enjoy it.</p>
  </table>
 ```
 
+
+
+
 ### 3. 위의 내용 모아보기 1 (소스코드)
 
 ```xml
@@ -208,6 +233,7 @@ HTML is easy to learn - You will enjoy it.</p>
   <div>
   <form>
     <!-- input type="text"와 같음 -->
+    <!-- input의 기본 값을 "html"로 설정-->
     <input style="width:50px" 
            value="html"
            maxlength="10"> 

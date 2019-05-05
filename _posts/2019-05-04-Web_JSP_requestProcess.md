@@ -2,7 +2,7 @@
 layout: post
 title: "[JSP] JSP 요청 프로세스"
 comments: true
-categories: JSP_basic
+categories: Web
 ---
 
 ### 1. 요청 프로세스

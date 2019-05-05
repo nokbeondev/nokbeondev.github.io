@@ -2,7 +2,7 @@
 layout: post
 title: "[DB&Java] DB와 DAO 연결"
 comments: true
-categories: DB_Java_connection
+categories: Web
 ---
 
 ### 1. DAO 클래스에서 DB와 연결하기

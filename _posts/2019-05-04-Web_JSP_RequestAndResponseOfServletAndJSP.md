@@ -2,7 +2,7 @@
 layout: post
 title: "[JSP] Servlet과 JSP에서의 Request와 Response"
 comments: true
-categories: JSP_basic
+categories: Web
 ---
 
 ### 1. 순서

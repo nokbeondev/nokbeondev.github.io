@@ -130,6 +130,7 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
 위의 코드는 아래와 같이 웹 브라우저에서 표현된다. 아래 그림처럼 위, 아래 화살표 클릭으로 2씩 증가/감소 할 수 있는 기능, 날짜 정하는 기능, 이메일 형식만 입력받을 수 있는 기능, 입력하는 박스에 '입력하세요'라는 문구를 넣을 수 있는 기능, 자동 포커스 받을 수 있는 기능, radio 선택 기능, 체크박스 기능 등이 있다.
 
 ![input설명그림1](https://nokbeondev.github.io/img/Web_html_input2.JPG)
+
 ![input설명그림2](https://nokbeondev.github.io/img/Web_html_input.JPG)
 
 - `<select>`, `<option>`

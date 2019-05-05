@@ -111,12 +111,88 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
 ![input설명그림](https://nokbeondev.github.io/img/Web_html_input.JPG)
 
 - `<select>`, `<option>`
+여러 옵션 중에 선택한 것을 입력받는 기능이다.
+
+```xml
+    <select>
+      <option>서울</option>
+      <option>경기</option>
+      <option>부산</option>
+    </select>
+```
+아래와 같이 웹 브라우저에 표현된다.
+![select설명그림](https://nokbeondev.github.io/img/Web_html_select_option.png)
+
 - `<textarea>`
 여러 줄을 입력할 수 있는 text 박스가 생성된다.
 
 - `&nbsp;`
 한 칸을 띌 때 쓰인다.
 
+- `<ol>`, `<ul>`, `<li>`, `<p>`, `<h1>` ~ `<h6>`
+
+```xml
+ <!-- 제목태그:h1~h6 -->
+ <!-- 단락:p -->
+ <p>With HTML you can create your own Website.<br>
+This tutorial teaches you everything about HTML.<br>
+HTML is easy to learn - You will enjoy it.</p>
+  <!-- 줄바꿈:br -->
+ 
+ <p>두번째 단락</p>  
+  <!-- 목록: 순서없는 목록ul
+            순서있는 목록ol
+         하위요소: li
+  -->
+ <ul>
+   <li>ONE</li>
+   <li>TWO</li>
+   <li>THREE</li>
+ </ul>
+ 
+ <ol>
+   <li>ONE</li>
+   <li>TWO</li>
+   <li>THREE</li>
+ </ol>
+```
+- `<table>`
+표를 생성한다.
+
+- `<thead>`, `<tbody>`, `<tfoot>`
+차례로 머릿말, (머릿말 혹은 꼬릿말의)바디, 꼬릿말을 표현한다.
+
+- `<tr>`, `<th>`, `<td>`
+차례로 행, 헤더열, 열을 표현한다.
+
+```xml
+ <!-- 표 :table
+      머릿말: thead
+      바디: tbody
+      꼬릿말: tfoot
+      행 : tr
+      헤더열: th
+      열 : td
+ -->
+ <!-- <table border="1" width="800"> -->
+ <table style="border:1px solid; width:800px; height:100px;">
+   <thead>
+     <tr><th width="150">과목</th><th>강의실</th><th>시수</th></tr>
+   </thead>
+   <tbody>
+     <tr><td>수학</td><td>101</td><td>5</td></tr>
+     <tr><td>영어</td><td>201</td><td>3</td></tr>
+     <tr><td>사회</td><td>301</td><td>1</td></tr>
+     <tr><td rowspan="2">과학</td><td>401</td><td>4</td></tr>
+     <tr>                         <td>402</td><td>4</td></tr>
+   </tbody>
+   <tfoot>
+     <tr><td colspan="3">연락처:114, 담당자:이길동, 주소:대치동</td></tr>
+   </tfoot>
+ </table>
+```
+
+### 3. 위의 내용 모아보기 1 (소스코드)
 
 ```xml
 <!-- form.html
@@ -174,6 +250,7 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
 </html>
 ```
 
+### 4. 위의 내용 모아보기 2 (소스코드)
 
 ```xml
 <!DOCTYPE html>

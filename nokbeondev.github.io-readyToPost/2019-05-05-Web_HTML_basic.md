@@ -30,13 +30,15 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
 
 ### 2. 기본 문법들
 
+- `<head>`, `<title>`, `<body>`
+`<body>`는 페이지를 열 때에 브라우저에 표시되지만 `<head>`는 표시되지 않는다. 대신 페이지에 대한 metadata를 포함하는 일을 한다. `<title>`은 말 그대로 웹 브라우저의 상단에 제목으로 들어갈 내용을 설정한다.
 
-- `<head>`
-- `<title>`
-- `<body>`
 - `<br>`
+한 줄을 띄우는 역할을 한다.
+
 - `<form>`
 큰 틀을 만드는 데 사용한다. `<form>`은 입력된 데이터를 한 번에 서버로 전송한다. 전송한 데이터는 웹 서버가 처리하고, 결과에 따른 또 다른 웹 페이지를 보여준다.
+
 - `<div>`와 `<span>`
 둘 다 공간 분할 하는 데에 사용한다. `<div>`는 Block형식이고 `<span>`은 inline형식이다.
 ```xml
@@ -48,7 +50,7 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
              width:100px;
              padding:10px;
              margin:20px;">
- DIV1 
+ DIV1
    <ol>
 	   <li>ONE</li>
 	   <li>TWO</li>
@@ -68,12 +70,10 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
               padding:10px;
               margin:20px;">SPAN1</span>
  <span style="border:1px dotted;background-color:green;color:orange;">SPAN2</span>
-  
  <div> 
   <a href="http://www.google.com" style="width:1000px;border:1px solid;">구글</a>
   <a href="http://www.naver.com">네이버</a>
  </div>
- 
  <div>
   <img src="https://movie-phinf.pstatic.net/20190417_250/1555465284425i6WQE_JPEG/movie_image.jpg"
        width="100px"
@@ -84,15 +84,37 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
        alt="뽀로로 극장판">       
  </div>
 ```
-위의 코드는 아래와 같이 브라우저에 표현된다.
+위의 코드는 아래와 같이 브라우저에 표현된다. `<span>`의 경우 상하마진이 무시된다. 즉, 컨텐츠의 크기가 크면 위 아래 행과 겹친다. `<div>`는 블록을 쌓는 형태이고 `<span>`은 한 줄에 나란히 나열하는 형태이다.
 ![div와span설명그림](https://nokbeondev.github.io/img/Web_html_span_div.JPG)
 
+- `<input>` (HTML5에 추가된 `input` 타입의 속성값들)
 
-- `<input>`
-	- HTML5에 추가된 `input` 타입의 속성값들
-- `<select>`
-- `<option>`
+```xml
+<div>
+    <h3>HTML5에 추가된 input type속성값들</h3>
+    <form>
+      <input type="number" value="5" max="10" min="1" step="2"><br>
+      <input type="date"><br>
+      <input type="email"><br>
+    </form>
+  </div>
+  <div>
+    <h3>HTML5에 추가된 input태그의 속성들</h3>
+    <form>
+      <input placeholder="입력하세요"><br>
+      <input> <input autocomplete="off"><br>
+      <input autofocus placeholder="자동포커스받기">
+    </form>
+  </div>
+```
+
+
+- `<select>`, `<option>`
 - `<textarea>`
+여러 줄을 입력할 수 있는 text 박스가 생성된다.
+
+- `&nbsp;`
+한 칸을 띌 때 쓰인다.
 
 
 ```xml
@@ -147,7 +169,6 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
       <input autofocus placeholder="자동포커스받기">      
     </form>
   </div>
-  
 </body>
 </html>
 ```

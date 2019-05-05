@@ -150,6 +150,8 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
     </select>
 ```
 아래와 같이 웹 브라우저에 표현된다.
+
+
 ![select설명그림](https://nokbeondev.github.io/img/Web_html_select_option.png)
 
 - `<textarea>`

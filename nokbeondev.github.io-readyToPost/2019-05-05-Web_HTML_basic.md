@@ -30,15 +30,66 @@ HTML은 버전 별로 지원하는 태그가 조금씩 다르다. 그래서 HTML
 
 ### 2. 기본 문법들
 
-- `<form>`
-큰 틀을 만드는 데 사용한다. `<form>`은 입력된 데이터를 한 번에 서버로 전송한다. 전송한 데이터는 웹 서버가 처리하고, 결과에 따른 또 다른 웹 페이지를 보여준다.
-- `<div>`
+
 - `<head>`
 - `<title>`
 - `<body>`
+- `<br>`
+- `<form>`
+큰 틀을 만드는 데 사용한다. `<form>`은 입력된 데이터를 한 번에 서버로 전송한다. 전송한 데이터는 웹 서버가 처리하고, 결과에 따른 또 다른 웹 페이지를 보여준다.
+- `<div>`와 `<span>`
+둘 다 공간 분할 하는 데에 사용한다. `<div>`는 Block형식이고 `<span>`은 inline형식이다.
+```xml
+<!-- 영역: div -크기설정가능, 자동줄바꿈
+            span -크기설정불가(컨텐트크기만큼만 자동설정됨),자동줄바꿈안됨,
+                 -상하마진은 무시됨(0).
+-->
+ <div style="border:1px solid;background-color:yellow;
+             width:100px;
+             padding:10px;
+             margin:20px;">
+ DIV1 
+   <ol>
+	   <li>ONE</li>
+	   <li>TWO</li>
+	   <li>THREE</li>
+   </ol>
+ </div> 
+ <div style="border:1px dotted;background-color:green;color:orange;">
+ DIV2
+   <ol>
+     <li>ONE</li>
+     <li>TWO</li>
+     <li>THREE</li>
+   </ol>
+ </div>
+ <span style="border:1px solid;background-color:yellow;
+              width:100px;
+              padding:10px;
+              margin:20px;">SPAN1</span>
+ <span style="border:1px dotted;background-color:green;color:orange;">SPAN2</span>
+  
+ <div> 
+  <a href="http://www.google.com" style="width:1000px;border:1px solid;">구글</a>
+  <a href="http://www.naver.com">네이버</a>
+ </div>
+ 
+ <div>
+  <img src="https://movie-phinf.pstatic.net/20190417_250/1555465284425i6WQE_JPEG/movie_image.jpg"
+       width="100px"
+       height="100px" 
+       alt="어벤져스: 엔드게임">
+  <img src="images/pororo.jpg"
+       style="width:100px; height:100;"
+       alt="뽀로로 극장판">       
+ </div>
+```
+위의 코드는 아래와 같이 브라우저에 표현된다.
+![div와span설명그림](https://nokbeondev.github.io/img/Web_html_span_div.JPG)
+
+
 - `<input>`
 	- HTML5에 추가된 `input` 타입의 속성값들
-- `<br>`
 - `<select>`
 - `<option>`
 - `<textarea>`

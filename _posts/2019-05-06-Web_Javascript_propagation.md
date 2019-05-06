@@ -11,7 +11,7 @@ categories: Web
 아래 코드에서 보면 div1이 `<a>`태그를 감싸고 있으므로 div1이라는 `<div>`가 `<a>`의 상위 요소이다. 따라서 링크 클릭 시 링크의 배경색이 노란색으로 변해야하고 링크 페이지로 이동해야하며, div1 영역이 회색으로 변해야한다. 하지만 `event.preventDefault()`에 의해 링크로 이동하지 않고 `event.stopPropagation()`에 의해 상위 요소인 div1의 배경색이 바뀌지 않는다. 단, `<a>`영역이 아닌 div1 영역을 클릭 시에는 배경색이 회색으로 변한다.
 
 ### 2. 예제 소스 코드
-```xml
+```javascript
 <!DOCTYPE html>
 <html>
 <head>

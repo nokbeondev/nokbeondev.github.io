@@ -9,7 +9,7 @@ categories: Web
 `<a>`, `<submit>`태그는 default이벤트 처리가 존재한다. `<a>`태그는 click 이벤트에 대한 처리가 내장되어있다. 사용자 정의 이벤트 처리후 default 이벤트 처리가 진행된다. default 이벤트 처리를 안 하려면 사용자 정의 이벤트 처리용 함수에 매개 변수로 이벤트를 설정하고 함수 안에서 `event.preventDefault()`를 호출한다
 
 `<form>`태그에 `action`으로 경로를 설정하고 그 안에 버튼을 만들면 클릭 시 바로 이동한다.
-```xml
+```javascript
 <!DOCTYPE html>
 <html>
 <head>

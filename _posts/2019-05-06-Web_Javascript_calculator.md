@@ -9,7 +9,7 @@ categories: Web
 
 반복문 안에 변수를 두 개를 두어(i, j) 버튼이 담길 btArr의 인덱스로 쓰일 변수(j) 반복문에 쓰일 변수(i)로 설정했다.
 
-```xml
+```javascript
 <!DOCTYPE html>
 <html>
 <head>

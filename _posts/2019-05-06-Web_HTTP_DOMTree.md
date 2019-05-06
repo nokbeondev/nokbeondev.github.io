@@ -17,3 +17,12 @@ categories: Web
 
 ### 2. DOM Tree
 렌더링 엔진이 **위에서 아래, 좌에서 우**의 형태로 DOM 트리를 형성하면 자바스크립트가 참조하여 작동한다. 렌더링 엔진은 각 객체들이 id 식별자를 부여하고 자바스크립트는 그 것을 이용하여 객체를 찾아 간다. (이런 이유로 id 속성값은 중복되면 안된다.)
+
+![DOMTree그림](https://nokbeondev.github.io/img/DOM_Tree.JPG)
+
+객체의 유형을 "Node"라고 한다.
+
+- Node의 종류
+	- Element Node (태그용) : 이름 O, 값 X
+	- Attribute Node (속성용) : 이름 O, 값 O
+	- Text Node (일반 문자용) : 이름 X, 값 O

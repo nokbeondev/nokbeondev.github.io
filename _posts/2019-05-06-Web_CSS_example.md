@@ -137,7 +137,7 @@ div>ul a:hover {background-color: yellow;}/*마우스 커서가 올라갔을 때
 ### 2. 간단히 화면 구성하기
 아래의 그림과 같이 영역의 색, 특성 등을 설정할 수 있다.
 
-![화면구성설명그림](https://nokbeondev.github.io/img/)
+![화면구성설명그림](https://nokbeondev.github.io/img/Web_CSS1.JPG)
 
 아래는 소스코드이다.
 ```javascript

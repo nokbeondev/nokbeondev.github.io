@@ -15,7 +15,7 @@ categories: Web
 클릭 이벤트가 발생 했을 때 수행되야하는 내용을 구현한다. (중괄호 안에)
 
 
-```xml
+```javascript
 <!DOCTYPE html>
 <html>
 <head>

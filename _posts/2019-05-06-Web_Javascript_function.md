@@ -7,7 +7,7 @@ categories: Web
 
 ### 1. 메소드(함수) 선언, 인풋 인자 대입
 
-```xml
+```javascript
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,7 +42,7 @@ f3(1); //p1에1대입,p2에 undefined
 ### 2. 이전, 다음 페이지로 이동
 `go()`매소드로 앞, 뒤로 이동할 수 있다. -1은 이전, 1은 다음으로 이동을 의미한다.
 
-```xml
+```javascript
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,7 +63,7 @@ history.go(-1);
 
 `location`을 통해 특정 url로 이동할 수 있다.
 
-```xml
+```javascript
 <!DOCTYPE html>
 <html>
 <head>
@@ -82,7 +82,7 @@ location.href="http://localhost:8888";//url이 이동됨
 
 ### 4. 알림창 띄우기, 새 창 띄우기
 
-```xml
+```javascript
 <!DOCTYPE html>
 <html>
 <head>

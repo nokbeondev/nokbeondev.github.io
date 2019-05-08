@@ -32,7 +32,7 @@ disqus_shortname: nokboendev
 # 
 # xxxxx字符串
 baidu_tongji_id: cf8506e0ef223e57ff6239944e5d46a4
-google_analytics_id: 
+google_analytics_id: UA-139883209-1
 
 # Build settings
 markdown: kramdown

@@ -62,8 +62,8 @@ btnCall.setOnClickListener(new View.OnClickListener() {
 - gravity, layout_gravity
 요소의 위치를 설정하는 기능이다. `gravity`는 해당 뷰 안의 콘텐츠의 위치에 영향을 준다. `layout_gravity`는 해당 뷰의 위치를 설정하는 기능이다.
 
-- baselineAligned
-위, 아래로 글자 선 맞춤을 설정한다.
+- baselineAligned, margin, padding
+`baselineAligned`는 위, 아래로 글자 선 맞춤을 설정한다. `margin`은 화면의 끝과의 거리를 나타낸다. `padding`은 요소 안의 공간을 설정한다.
 
 ```xml
 <LinearLayout
@@ -97,10 +97,13 @@ btnCall.setOnClickListener(new View.OnClickListener() {
 </LinearLayout>
 ```
 
-- margin, padding
+위와 같이 설정할 경우 아래와 같은 형태로 구현된다.
+
+![속성들결과화면](https://nokbeondev.github.io/img/baselineAligned_margin_padding.PNG)
 
 
 - visibility
+레이아웃이나 버튼 이미지 뷰 등등 xml에서 제어 가능한 부분을 조건에 따라 보여주고 숨길 수 있는 방법이다.
 
 
 

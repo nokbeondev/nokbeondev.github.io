@@ -31,13 +31,19 @@ btnCall.setOnClickListener(new View.OnClickListener() {
 ### 3. 대표적 레이아웃 종류
 
 - AbsoluteLayout
+화면에 보여질 뷰에 대해서 절대적인 위치(x, y)를 통해 나타내는 레이아웃이다. 그러나 디바이스마다 화면의 크기가 달라서 콘텐츠의 상대적인 위치가 달라질 수 있는 문제점이 있다. **현업에서 잘 쓰지 않는 레이아웃**이다.
 
 - FrameLayout
+아래의 그림과 같이 여러 장의 뷰(레이아웃과 같은 말)를 순차적으로 쌓아 올리면서 배치하는 기능을 갖는다. 이 기능 하나 뿐이다.
+![프레임레이아웃그림](https://nokbeondev.github.io/img/framelayout.PNG)
 
 - GridLayout(표 형태의 화면 구성 가능, 셀  병합 가능)
 
+
 - LinearLayout
 
+
 - RelativeLayout
+
 
 - table Layout(표만 만들 수 있고 셀 병합은 안된다. 상위 버전으로 올라가면서 사라짐, 사용 하지 않는 것을 권장)

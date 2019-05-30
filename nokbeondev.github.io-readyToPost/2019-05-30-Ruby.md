@@ -1,0 +1,12 @@
+---
+layout: post
+title: "[Ruby] "
+comments: true
+categories: Ruby
+---
+
+### 1. 개념
+
+임의의 노드에서 시작해서 다음 분기로 넘어가기 전에 해당 분기를 완벽하게 탐색하는 방법
+
+
